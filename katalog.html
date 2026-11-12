@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Proyek | Bagas Tri Saputra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Bagas<span>.</span></h2>
+         <button class="menu-toggle"type="button"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false">
+        ☰
+    </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="katalog">
+            <h1>Proyek dan Karya Saya</h1>
+            <p class="katalog-deskripsi">
+                Berikut merupakan beberapa proyek dan latihan
+                yang saya pelajari dalam proses mengembangkan
+                kemampuan di bidang pemrograman web.
+            </p>
+            <div class="filter-katalog">
+
+             <input
+                 type="text"
+                 id="cariProyek"
+                 placeholder="Cari nama proyek..."  >
+             <select id="filterKategori">
+             <option value="semua">Semua Kategori</option>
+             <option value="portofolio">Portofolio</option>
+             <option value="formulir">Formulir</option>
+             <option value="aplikasi">Aplikasi</option>
+             <option value="game">Game</option>
+             <option value="login">Login</option>
+             <option value="bisnis">Bisnis</option>
+             </select>
+
+            </div>
+
+            <p id="hasilPencarian"></p>
+            <div class="katalog-container">
+                <article class="katalog-card" data-kategori="portofolio">
+                    <img src="foto portofolio 1.png"
+                         alt="Tampilan proyek website portofolio pribadi">
+                    <h2>Website Portofolio</h2>
+                    <p>
+                        Website pribadi untuk memperkenalkan
+                        profil, kemampuan, dan proyek.
+                    </p>
+                    <span>Kategori: HTML, CSS, dan JavaScript</span>
+                </article>
+                <article class="katalog-card" data-kategori="formulir">
+                    <img src="foto formulir pendaftaran 7..png"
+                         alt="Tampilan halaman formulir pendaftaran">
+                    <h2>Formulir Pendaftaran</h2>
+                    <p>
+                        Halaman formulir pendaftaran dengan
+                        input nama, email, password,dan informasi pengguna.
+                    </p>
+                    <span>Kategori: HTML, CSS, dan JavaScript</span>
+                </article>
+                <article class="katalog-card" data-kategori="aplikasi">
+                    <img src="foto To Do List 3.png"
+                         alt="Tampilan aplikasi daftar tugas">
+                    <h2>Website To-Do List</h2>
+                    <p>
+                        Aplikasi sederhana untuk mencatat
+                        dan mengelola daftar kegiatan.
+                    </p>
+                    <span>Kategori: HTML, CSS, dan JavaScript</span>
+                </article>
+                <article class="katalog-card" data-kategori="game">
+                    <img src="foto game tebak angka 4.png"
+                         alt="Tampilan permainan tebak angka">
+                    <h2>Game Tebak Angka</h2>
+                    <p>
+                        Permainan tebak angka sederhana untuk melatih
+                        logika dan pemrograman JavaScript.
+                    </p>
+                    <span>Kategori: HTML, CSS, dan JavaScript</span>
+                </article>
+                <article class="katalog-card" data-kategori="login">
+                    <img src="foto halaman login 5.png"
+                         alt="Tampilan halaman login website">
+                    <h2>Halaman Login</h2>
+                    <p>
+                        Halaman login sederhana sebagai
+                        latihan membuat antarmuka pengguna.
+                    </p>
+                    <span>Kategori: HTML, CSS, dan JavaScript</span>
+                </article>
+                <article class="katalog-card" data-kategori="bisnis">
+                    <img src="foto proyek FM.KICK 6.png"
+                         alt="Tampilan website proyek FM.KICK">
+                    <h2>Proyek FM.KICK</h2>
+                    <p>
+                        Proyek website untuk mengembangkan bisnis pribadi,
+                        keterampilan desain,dan pemrograman web.
+                    </p>
+                    <span>Kategori: HTML, CSS, dan JavaScript</span>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bagas Tri Saputra. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

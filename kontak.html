@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak | Bagas Tri Saputra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Bagas<span>.</span></h2>
+         <button class="menu-toggle"type="button"
+        aria-label="Buka menu navigasi"
+        aria-expanded="false">
+        ☰
+    </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="katalog.html">Katalog</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="kontak">
+            <h1>Hubungi Saya</h1>
+            <p>
+                Terima kasih telah mengunjungi portofolio saya.
+                Silakan hubungi saya melalui informasi kontak
+                atau formulir di bawah ini.
+            </p>
+            <div class="informasi-kontak">
+                <h2>Informasi Kontak</h2>
+                <p><strong>Nama:</strong> Bagas Tri Saputra</p>
+                <p><strong>Alamat:</strong>
+                    Gg.Yosudarso III,kelurahan Gabek 2,Kecamatan Gabek,Kota Pangkalpinang,Kepulauan Bangka Belitung
+                </p>
+                <p><strong>Email:</strong>
+                    bgas0986@gmail.com
+                </p>
+                <p><strong>Instagram:</strong>
+                    gaszz_gxts
+                </p>
+            </div>
+        </section>
+        <section class="tabel-kontak">
+            <h2>Media Komunikasi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Media</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Email</td>
+                        <td>bgas0986@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram</td>
+                        <td>gaszz_gxts</td>
+                    </tr>
+                    <tr>
+                        <td>Telepon</td>
+                        <td>083163880998</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="peta">
+            <h2>Lokasi</h2>
+            <p>
+                Peta lokasi dapat disesuaikan dengan alamat
+                atau lokasi publik yang ingin ditampilkan.
+            </p>
+            <iframe
+                src="https://www.google.com/maps?q=Pangkalpinang&output=embed"
+                width="100%"
+                height="300"
+                title="Peta lokasi"
+                loading="lazy">
+            </iframe>
+        </section>
+        <section class="form-kontak">
+            <h2>Kirim Pesan</h2>
+            <form id="form-kontak">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama lengkap"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="contoh@email.com"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="telepon">Nomor HP</label>
+                    <input
+                        type="tel"
+                        id="telepon"
+                        name="telepon"
+                        placeholder="Contoh: 081234567890"
+                        pattern="[0-9]{10,13}"
+                        minlength="10"
+                        maxlength="13"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="pilihan">Keperluan</label>
+                    <select
+                        id="pilihan"
+                        name="pilihan"
+                        required>
+                        <option value="">Pilih keperluan</option>
+                        <option value="Kerja Sama">Kerja Sama</option>
+                        <option value="Pertanyaan">Pertanyaan</option>
+                        <option value="Informasi">Informasi</option>
+                        <option value="Lainnya">Lainnya</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        rows="5"
+                        minlength="10"
+                        maxlength="500"
+                        placeholder="Tuliskan pesan Anda..."
+                        required></textarea>
+                </div>
+                <button type="submit">
+                    Kirim Pesan
+                </button>
+                <p id="pesan-from"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bagas Tri Saputra. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
